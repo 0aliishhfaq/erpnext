@@ -16,6 +16,8 @@ Do not use browser scraping, reverse-engineered endpoints, credential sharing, o
 
 ## Phase 1 goal
 
+Use the [International Document & UI Design Standard](TRAVEL_AGENCY_DOCUMENT_DESIGN_STANDARD.md) and [Print Format Catalogue](docs/print-formats/README.md) as the presentation baseline. These are design specifications, not implemented/rendered Print Format records yet.
+
 Give staff one reliable place to manage an air-ticket customer from enquiry to issued e-ticket and financial settlement, while also supporting visa cases and basic Umrah/tour package records. Keep flight-provider work outside the app until authorized access exists.
 
 ## In-scope modules
@@ -230,6 +232,9 @@ Standard ERPNext DocTypes remain the source of truth for customer/supplier accou
 
 ## Acceptance tests for Phase 1
 
+13. Customer-facing and internal print formats follow the document catalogue, use unambiguous dates/currency/airport codes, and pass A4 print/pagination tests.
+14. Original issuer e-ticket documents remain unaltered; agency summaries are clearly labelled and never impersonate official tickets or visas.
+15. Sensitive fields are omitted or permission-filtered by document audience.
 1. Staff can create a customer enquiry and prepare multiple quote versions.
 2. A quote can be approved, accepted, expired, or rejected with an audit trail.
 3. One booking supports multiple passengers and retains a stable booking reference.
