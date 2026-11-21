@@ -97,6 +97,8 @@ Hajj-specific workflows and quotas should remain configurable and must be valida
 
 ## Consolidator PDF / Excel import
 
+All customer-facing and internal forms/reports use the [international document and UI design standard](TRAVEL_AGENCY_DOCUMENT_DESIGN_STANDARD.md) and the [print format catalogue](docs/print-formats/README.md). Canonical import fields are defined in the [import data dictionary](docs/imports/CANONICAL_IMPORT_DATA_DICTIONARY.md). These documents specify the intended standard; they are not evidence that print formats or an importer have been implemented in a running site.
+
 The initial supplier is a fictional development placeholder named **Demo Consolidator**. The real supplier name does not block the first release.
 
 Staff download booking/ticket reports and supplier statements from the provider portal, then upload the files to a private import inbox. The import process must:
