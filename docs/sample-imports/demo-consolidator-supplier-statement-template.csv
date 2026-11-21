@@ -1,0 +1,2 @@
+supplier_profile,statement_reference,statement_date,transaction_date,transaction_reference,transaction_type,pnr,ticket_number,passenger_name,currency,debit,credit,running_balance,due_date,description
+Demo Consolidator,SAMPLE-STATEMENT-001,2026-11-21,2026-11-20,SAMPLE-TXN-001,Ticket Sale,SAMPLE-PNR-001,SAMPLE-TKT-001,TEST PASSENGER,PKR,92000,0,92000,2026-11-28,Synthetic training row; do not post to accounts
