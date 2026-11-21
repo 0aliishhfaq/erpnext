@@ -95,6 +95,25 @@ Hajj-specific workflows and quotas should remain configurable and must be valida
 - Approval limits for discounts, refunds, write-offs, and manual ticket status overrides.
 - Branch-, salesperson-, supplier-, and service-wise profitability.
 
+## Consolidator PDF / Excel import
+
+The initial supplier is a fictional development placeholder named **Demo Consolidator**. The real supplier name does not block the first release.
+
+Staff download booking/ticket reports and supplier statements from the provider portal, then upload the files to a private import inbox. The import process must:
+
+1. Accept XLSX/CSV and supported text-based PDF layouts.
+2. Let staff choose report type, sheet and header row, then preview source rows and map columns through a versioned supplier/report mapping profile.
+3. Validate PNRs, ticket numbers, passenger association, dates, currencies, and required amount fields.
+4. Flag duplicates and invalid rows before any record is created.
+5. Keep every imported row traceable to the original private file and sheet/page/row.
+6. Require staff approval and make repeat uploads idempotent.
+7. Keep supplier statement lines in reconciliation staging; do not auto-post them to the ERPNext general ledger.
+8. Route scanned/image-only PDFs to manual review rather than silently trusting OCR output.
+
+Do not scrape the supplier website, automate portal clicks, execute workbook macros/formulas, or store portal credentials. Use an API only if the provider later grants written authorization and supported API access.
+
+Synthetic CSV templates live in `docs/sample-imports/`. They are examples only and must be replaced with mappings based on a redacted real export when available.
+
 ## Core custom DocTypes (initial proposal)
 
 | DocType | Purpose |
