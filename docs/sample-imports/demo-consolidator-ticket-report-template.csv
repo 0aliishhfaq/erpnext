@@ -1,0 +1,2 @@
+supplier_profile,report_reference,report_date,booking_date,pnr,booking_status,passenger_name,origin,destination,departure_datetime,airline,ticket_number,ticket_status,currency,customer_total,supplier_cost,airline_taxes,agency_service_fee,agency_markup,supplier_locator,eticket_file_name,notes
+Demo Consolidator,SAMPLE-REPORT-001,2026-11-21,2026-11-20,SAMPLE-PNR-001,Ticketed,TEST PASSENGER,LHE,DXB,2026-12-10 09:00,XX,SAMPLE-TKT-001,Issued,PKR,100000,92000,12000,3000,3000,SAMPLE-LOCATOR-001,sample-eticket-001.pdf,Synthetic training row; not a real booking or ticket
