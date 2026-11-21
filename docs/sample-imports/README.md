@@ -4,8 +4,9 @@ These CSV files are **synthetic templates only**. They do not represent a real c
 
 ## Files
 
-- `demo-consolidator-ticket-report-template.csv`: one example row for a ticket/booking report. Map each source provider's actual columns to the import fields; do not assume these headers will match the real portal export.
-- `demo-consolidator-supplier-statement-template.csv`: one example row for a supplier statement. Statement rows must remain staging records until accounts staff reconcile and approve them.
+- `demo-consolidator-ticket-report-template.csv`: header-only template for a ticket/booking report, using canonical field names.
+- `demo-consolidator-supplier-statement-template.csv`: header-only template for a supplier statement, using canonical field names. Statement rows must remain staging records until accounts staff reconcile and approve them.
+- The [canonical import data dictionary](../imports/CANONICAL_IMPORT_DATA_DICTIONARY.md) defines field types, validation and duplicate-detection rules.
 
 ## Import rules
 
